@@ -1,12 +1,12 @@
 version: '2'
 services:
   sysdig:
-   image: sysdig/sysdig:latest
-   privileged: true
-   volumes:
-    - /var/run/docker.sock:/host/var/run/docker.sock
-    - /dev:/host/dev
-    - /proc:/host/proc:ro
-    - /boot:/host/boot:ro
-    - /lib/modules:/host/lib/modules:ro
-    - /usr:/host/usr:ro
+    image: sysdig/sysdig:latest
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/host/var/run/docker.sock
+      - /dev:/host/dev
+      - /proc:/host/proc:ro
+      - /boot:/host/boot:ro
+      - /lib/modules:/host/lib/modules:ro
+      - /usr:/host/usr:ro
